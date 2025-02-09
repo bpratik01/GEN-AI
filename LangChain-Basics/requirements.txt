@@ -1,0 +1,9 @@
+langchain
+python-dotenv
+langchain-openai
+langchain-core
+langchain-community
+bs4
+faiss-cpu
+pypdf
+langchain_groq
