@@ -7,3 +7,5 @@ bs4
 faiss-cpu
 pypdf
 langchain_groq
+langgraph
+
