@@ -1,6 +1,7 @@
 from crewai import Agent, Task, Crew, LLM
 import os
 from dotenv import load_dotenv
+
 load_dotenv()
 
 llm = LLM(model="gpt-4", api_key=os.getenv("OPENAI_API_KEY"))
@@ -19,21 +20,22 @@ reviewer = Agent(
     llm=llm
 )
 
+task1 = Task(
+    description='Draft a blog post about the benefits of meditation.',
+    agent=writer,
+    expected_output='A well-structured blog post detailing the benefits of meditation.'
+)
+
+task2 = Task(
+    description='Refine the blog post for clarity and quality.',
+    agent=reviewer,
+    expected_output='A polished, high-quality blog post ready for publishing.'
+)
+
 crew = Crew(
-    agents=[writer, reviewer],
-    tasks=[
-        Task(
-            description='Draft a blog post about the benefits of meditation.',
-            agent=writer,
-            expected_output='A well-structured blog post detailing the benefits of meditation.'
-        ),
-        Task(
-            description='Refine the blog post for clarity and quality.',
-            agent=reviewer,
-            expected_output='A polished, high-quality blog post ready for publishing.'
-        )
-    ],
-    process='Sequential'
+    agents=[writer, reviewer],   
+    tasks=[task1, task2],       
+    verbose=True                
 )
 
 print('Final Output:')
