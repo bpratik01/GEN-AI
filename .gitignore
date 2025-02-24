@@ -4,5 +4,6 @@ venv/
 jeet/
 LangChain-Basics/.env
 Chatbots/.env
+.env
 
 Financial AI Agent/.env
