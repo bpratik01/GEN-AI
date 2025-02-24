@@ -9,4 +9,6 @@ pypdf
 langchain_groq
 langgraph
 crewai
+langchain_chroma
 langserve
+langchain_huggingface

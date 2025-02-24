@@ -1,0 +1,26 @@
+REFERENCE: FREQUENTLY USED LLMS
+
+1. gemma2-9b-it
+  - Suited for Italian language processing and lightweight NLP.
+
+2. llama-3.1-8b-instant
+  - Optimized for fast responses and real-time conversational AI.
+
+3. llama-3.3-70b-versatile
+  - Designed for complex reasoning and diverse NLP challenges.
+
+4. o1-mini
+    - Efficient model for quick text processing.
+    - Computation cost: Low
+
+5. gpt-4o-mini
+    - Optimized for faster inference and reduced cost.
+    - Computation cost: Medium
+    
+6. text-embedding-3-small
+    - For generating compact and effective text embeddings.
+    - Computation cost: Low
+
+7. text-embedding-ada-002
+    - Suitable for generating high-quality text embeddings with improved performance.
+    - Computation cost: Medium
