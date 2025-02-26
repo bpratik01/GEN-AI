@@ -4,11 +4,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-llm = LLM(model="gpt-4", api_key=os.getenv("OPENAI_API_KEY"))
+llm = LLM(model="gpt-4o-mini", api_key=os.getenv("OPENAI_API_KEY"))
 
 writer = Agent(
     role='Content Writer',
-    goal='Draft a blog post about the benefits of meditation.',
+    goal='Draft a blog post about the benefits of staying consistent.',
     backstory='You are a content writer with a knack for creating engaging and informative blog posts.',
     llm=llm
 )
