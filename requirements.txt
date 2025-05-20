@@ -12,3 +12,4 @@ crewai
 langchain_chroma
 langserve
 langchain_huggingface
+langgraph-cli[inmem]
