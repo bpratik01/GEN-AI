@@ -8,12 +8,15 @@ from langgraph.prebuilt import ToolNode
 from langchain_core.tools import tool
 from langchain_core.messages import BaseMessage
 from langchain_core.runnables import RunnableConfig
+from langsmith import traceable 
 
 import os
 from dotenv import load_dotenv
 load_dotenv()
 
 os.environ['LANGSMITH_API_KEY'] = os.getenv("LANGSMITH_API_KEY")
+os.environ['LANGCHAIN_TRACING_V2'] = "true"
+os.environ['LANGCHAIN_PROJECT'] = "langraph_DEV"
 os.environ['OPENAI_API_KEY'] = os.getenv("OPENAI_API_KEY")
 
 
@@ -40,6 +43,7 @@ def make_default_graph():
 
   return chat_graph.compile()
 
+@traceable(run_type="agent", name="tool_calling_graph")
 def tool_calling_graph():
 
   @tool
