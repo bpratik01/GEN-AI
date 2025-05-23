@@ -1,0 +1,53 @@
+ORDER_DATABASE = {
+  "ORD001": {
+    "order_id": "ORD001",
+    "customer_name": "John Doe",
+    "customer_email": "john@email.com",
+    "product": "Wireless Headphones",
+    "status": "Delivered",
+    "order_date": "2024-01-15",
+    "delivery_date": "2024-01-18",
+    "price": "$99.99",
+    "tracking_number": "TRK123456"
+  },
+  "ORD002": {
+    "order_id": "ORD002",
+    "customer_name": "Jane Smith",
+    "customer_email": "jane@email.com",
+    "product": "Smart Watch",
+    "status": "Shipped",
+    "order_date": "2024-01-20",
+    "estimated_delivery": "2024-01-25",
+    "price": "$199.99",
+    "tracking_number": "TRK789012"
+  },
+  "ORD003": {
+    "order_id": "ORD003",
+    "customer_name": "Bob Johnson",
+    "customer_email": "bob@email.com",
+    "product": "Laptop Charger",
+    "status": "Processing",
+    "order_date": "2024-01-22",
+    "price": "$49.99"
+  },
+  "ORD004": {
+    "order_id": "ORD004",
+    "customer_name": "Sarah Williams",
+    "customer_email": "sarah@email.com",
+    "product": "Bluetooth Speaker",
+    "status": "Pending",
+    "order_date": "2024-01-23",
+    "price": "$79.99"
+  },
+  "ORD005": {
+    "order_id": "ORD005",
+    "customer_name": "Michael Brown",
+    "customer_email": "michael@email.com",
+    "product": "Gaming Mouse",
+    "status": "Shipped",
+    "order_date": "2024-01-21",
+    "estimated_delivery": "2024-01-27",
+    "price": "$59.99",
+    "tracking_number": "TRK345678"
+  }
+}
