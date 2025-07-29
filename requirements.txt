@@ -8,8 +8,13 @@ faiss-cpu
 pypdf
 langchain_groq
 langgraph
-crewai
 langchain_chroma
 langserve
 langchain_huggingface
 langgraph-cli[inmem]
+agno
+openai
+duckduckgo-search
+crewai
+crewai-tools
+streamlit
